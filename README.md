@@ -11,3 +11,7 @@
 [![Open in Hugging Face Spaces](https://img.shields.io/badge/Open%20in-Spaces-blue?logo=huggingface)](https://huggingface.co/spaces/woldemerkorios/Retina_lesion)
 
 Try it yourself: [Retina Lesion Space](https://huggingface.co/spaces/woldemerkorios/Retina_lesion)
+
+## Trained Model Weights
+- [yolov8n_seg_100epoch_best.pt](https://huggingface.co/spaces/woldemerkorios/Retina_lesion/blob/main/yolov8n_seg_16_batch_100epoch_best.pt)
+- [yolov8s_seg_100epoch_best.pt](https://huggingface.co/spaces/woldemerkorios/Retina_lesion/blob/main/yolov8s_seg_16batch_100epoch_best.pt)
