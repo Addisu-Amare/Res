@@ -18,7 +18,7 @@ A representative segmentation output is shown in Figure 2. The combination of YO
 ![Segmentation Result](https://raw.githubusercontent.com/Addisu-Amare/Res/main/avif-result.avif)
 
 **Figure 3 – YOLO‑SAM‑XAI Integration**  
-![YOLO‑SAM‑XAI](https://github.com/Addisu-Amare/Res/blob/main/yolo-sam-1.png)
+![YOLO‑SAM‑XAI](https://github.com/Addisu-Amare/Res/blob/main/yolo-sam-arch.png)
 
 ## 3. Comparative Evaluation
 
