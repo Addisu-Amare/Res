@@ -48,4 +48,4 @@ Trained weights for the YOLOv8‑seg variants are provided for reproducibility a
 
 - Ultralytics YOLOv8‑seg: [https://github.com/ultralytics/ultralytics](https://github.com/ultralytics/ultralytics)  
 - SAM2 (Meta): [https://github.com/facebookresearch/sam2](https://github.com/facebookresearch/sam2)  
-- HiResCAM (Explainable AI): [https://github.com/anguyen8/hirescam](https://github.com/anguyen8/hirescam)
+- HiResCAM (Explainable AI): [https://arxiv.org/abs/2011.08891](https://arxiv.org/abs/2011.08891)
