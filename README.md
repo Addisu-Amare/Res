@@ -44,6 +44,11 @@ Trained weights for the YOLOv8‑seg variants are provided for reproducibility a
 - [yolov8s_seg_100epoch_best.pt](https://huggingface.co/spaces/woldemerkorios/Retina_lesion/blob/main/yolov8s_seg_16batch_100epoch_best.pt)  
   *Small variant – 16 batch size, 100 epochs*
 
+  ##  Tackling  instance segmentation  problem of missing lession  using:Weighted Mask Ensemble + Mask NMS
+  -yolov8n-seg+yolov8s-seg: weighted ensemble
+  - Here is the demonstration image:
+  - 
+
 ## References
 
 - Ultralytics YOLOv8‑seg: [https://github.com/ultralytics/ultralytics](https://github.com/ultralytics/ultralytics)  
