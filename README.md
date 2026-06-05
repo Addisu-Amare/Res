@@ -47,7 +47,7 @@ Trained weights for the YOLOv8‑seg variants are provided for reproducibility a
   ##  Tackling  instance segmentation  problem of missing lession  using:Weighted Mask Ensemble + Mask NMS
   -yolov8n-seg+yolov8s-seg: weighted ensemble
   - Here is the demonstration image:
-  - 
+    ![Ensemble Comparison Result](https://github.com/Addisu-Amare/Res/blob/main/ensemble_comparison.png)
 
 ## References
 
