@@ -1,7 +1,11 @@
 # Comparative Study of YOLO, Transformer and Mask R-CNN for Instance Segmentation of Retinal Fundus Images with Explainable AI Techniques
 
 ## Abstract
-This work presents an instance segmentation pipeline for retinal fundus images, integrating **YOLOv8/11‑seg** (object detection + segmentation), **SAM2** (promptable segmentation refinement), and **HiResCAM** (explanatory visualisation). The system achieves precise localisation and delineation of retinal lesions, with the proposed architecture validated through comparative performance analysis. A live interactive demo is provided, along with trained model weights for reproducibility.
+The primary reason for blindness globally is diabetic retinopathy (DR) and glaucoma. This indicates a need for accurate and automated automated retina image assessment. This work presents the instance segmentation of structures and lesions in retinal fundus images; such as optic disc, hemorrhaging (HA) and hard exudates (HE). The proposed method suggests the use of the YOLOv8/YOLOv11 segmentation model combined with a HiRes-CAM for explainability and also uses the new SAM2 for refinement of segmentation masks. The Mask R-CNN with ResNet backbone was also evaluated to compare performance.
+
+From the experiments, good performance was achieved in detecting small lesions with the following results: YOLOv8n-seg had a five-fold cross-validation mean average precision (mAP) score of 72.26% for HE and 63.28% for HA, and YOLOv11n-seg had 72.74% for HE and 60.46% for HA., A weighted mask ensemble increased detection of missed lesions and overall recall.
+
+In addition, the use of HiRes-CAM provided improved interpretability by assessing clinical significance of locations and allowed for efficient and explainable automated diagnosis of diabetic retinopathy.A live interactive demo is provided, along with trained model weights for reproducibility.
 
 ## 1. Methodology
 
@@ -27,7 +31,22 @@ Quantitative and qualitative comparisons against baseline models are summarised 
 **Figure 4 – Performance Comparison**  
 ![Comparison Result](https://github.com/Addisu-Amare/Res/blob/main/comparison-graph_1.png)
 
-## 4. Live Demonstration
+## 4. Cross Validation Result
+
+To determine how robust and generalizable the suggested models are, the IDRiD dataset was used to perform five-fold cross-validation using the best performing YOLOv8n-seg and YOLOv11n-seg architectures. The average and standard deviations of mAP@50 for each class of retinal object across all folds is provided in table X. Both models performed exceptionally well for optic disc (OD) segmentation, with an average mAP of more than 98%. For the segmentation of lesions, YOLOv11n-seg had the greatest mean mAP at 50 for hard exudates (HE) at 72.74%, and YOLOv8n-seg had the greatest average mAP at 50 for hemorrhages (HA) at 63.28%. Both models had low standard deviations indicating that the results are stable across different splits of data..
+
+| Model        | Class | Mean mAP@50 | Std mAP@50 |
+|-------------|-------|------------:|-----------:|
+| YOLOv8n-seg | HA    | 0.6328 | 0.0345 |
+|             | HE    | 0.7226 | 0.0303 |
+|             | OD    | 0.9860 | 0.0089 |
+| YOLOv11n-seg| HA    | 0.6046 | 0.0383 |
+|             | HE    | 0.7274 | 0.0299 |
+|             | OD    | 0.9876 | 0.0054 |
+
+
+**Figure X:** Example training and validation performance curves obtained from Fold 5 during the cross-validation experiment.
+## 5. Live Demonstration
 
 An interactive Space is hosted on Hugging Face, allowing real‑time testing on custom fundus images.
 
@@ -35,7 +54,7 @@ An interactive Space is hosted on Hugging Face, allowing real‑time testing on 
 
 **Access the live demo:** [Retina Lesion Space](https://huggingface.co/spaces/woldemerkorios/Retina_lesion)
 
-## 5. Model Availability
+## 6. Model Availability
 
 Trained weights for the YOLOv8‑seg variants are provided for reproducibility and further fine‑tuning.
 
