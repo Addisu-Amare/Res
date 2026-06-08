@@ -44,8 +44,6 @@ To determine how robust and generalizable the suggested models are, the IDRiD da
 |             | HE    | 0.7274 | 0.0299 |
 |             | OD    | 0.9876 | 0.0054 |
 
-
-**Figure X:** Example training and validation performance curves obtained from Fold 5 during the cross-validation experiment.
 ## 5. Live Demonstration
 
 An interactive Space is hosted on Hugging Face, allowing real‑time testing on custom fundus images.
