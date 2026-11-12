@@ -36,8 +36,8 @@ torch.backends.cudnn.benchmark = False
 # 2. Configuration
 # ================================================================
 API_KEY = "your roboflow api"
-WORKSPACE = "addisuamarezena"
-PROJECT = "segmentation-gn75z"
+WORKSPACE = " "
+PROJECT = " "
 VERSION = 3
 DOWNLOAD_FORMAT = "yolov11"
 
