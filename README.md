@@ -1,11 +1,7 @@
-# Comparative Study of YOLO, Transformer and Mask R-CNN for Instance Segmentation of Retinal Fundus Images with Explainable AI Techniques
+# An Explainable YOLO-SAM Framework with Ensemble Masking for Retinal Lesion Segmentation
 
 ## Abstract
-The primary reason for blindness globally is diabetic retinopathy (DR) and glaucoma. This indicates a need for accurate and automated retina image assessment. This work presents the instance segmentation of structures and lesions in retinal fundus images; such as optic disc, hemorrhaging (HA) and hard exudates (HE). The proposed method suggests the use of the YOLOv8/YOLOv11 segmentation model combined with a HiRes-CAM for explainability and also uses the new SAM2 for refinement of segmentation masks. The Mask R-CNN with ResNet backbone was also evaluated to compare performance.
 
-From the experiments, good performance was achieved in detecting small lesions with the following results: YOLOv8n-seg had a five-fold cross-validation mean average precision (mAP) score of 72.26% for HE and 63.28% for HA, and YOLOv11n-seg had 72.74% for HE and 60.46% for HA. A weighted mask ensemble increased detection of missed lesions and overall recall.
-
-In addition, the use of HiRes-CAM provided improved interpretability by assessing clinical significance of locations and allowed for efficient and explainable automated diagnosis of diabetic retinopathy. A live interactive demo is provided, along with trained model weights for reproducibility.
 
 ## 1. Methodology
 
@@ -57,9 +53,9 @@ An interactive Space is hosted on Hugging Face, allowing real‑time testing on 
 Trained weights for the YOLOv8‑seg variants are provided for reproducibility and further fine‑tuning.
 
 - [yolov8n_seg_100epoch_best.pt](https://huggingface.co/spaces/woldemerkorios/Retina_lesion/blob/main/yolov8n_seg_16_batch_100epoch_best.pt)  
-  *Nano variant – 16 batch size, 100 epochs*
+ 
 - [yolov8s_seg_100epoch_best.pt](https://huggingface.co/spaces/woldemerkorios/Retina_lesion/blob/main/yolov8s_seg_16batch_100epoch_best.pt)  
-  *Small variant – 16 batch size, 100 epochs*
+  
 
 ## 7. Quick Start
 
